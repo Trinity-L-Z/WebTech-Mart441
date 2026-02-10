@@ -20,3 +20,7 @@ button {
 button:hover {
     background-color:cornflowerblue;
 }
+
+img {
+    width: 70%;
+}
