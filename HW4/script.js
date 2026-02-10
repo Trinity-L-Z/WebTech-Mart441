@@ -1,7 +1,7 @@
 function storyFunction(choice) {
     var answer1 = document.getElementById("choice1").innerHTML;
     var answer2 = document.getElementById("choice2").innerHTML;
-    if (choice == 1 && answer1 == "Yes") {
+    if (choice == 1 && answer1 == "I'm comfy on my couch") {
         document.getElementById("story").innerHTML = "Your cat is sleeping very snuggly on your lap, but you just realized you left your favorite snack on the counter in the kitchen. What do you do?";
         document.getElementById("choice1").innerHTML = "Get up and pray for forgiveness";
         document.getElementById("choice2").innerHTML = "Stay put and remain unsatisfied for the halftime show";
