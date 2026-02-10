@@ -8,3 +8,15 @@ body {
 h1 {
     color:blueviolet;
 }
+
+button {
+    padding: 10 px;
+    margin: 10px;
+    border-radius: 5px;
+    color:azure;
+    background-color:blueviolet;
+}
+
+button:hover {
+    background-color:cornflowerblue;
+}
