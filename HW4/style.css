@@ -24,3 +24,7 @@ button:hover {
 img {
     width: 100%;
 }
+
+#story {
+    font-size:medium;
+}
