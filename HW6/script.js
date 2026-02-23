@@ -1,4 +1,3 @@
-
 var imageTags = ["link1", "link2", "link3", "link", "link5", "link6"];
 var blankImagePath = "images/link1.png";
 var actualImages = new Array();
