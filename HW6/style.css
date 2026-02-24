@@ -28,3 +28,8 @@ body{
 .divTableBody {
 	display: table-row-group;
 }
+
+img {
+	transition: transform 0.6s;
+	
+}

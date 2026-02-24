@@ -1,3 +1,3 @@
 Primarily I noticed that AI did not create a separate stylesheet, which is probably because it wasn't specified in the homework instructions that I fed it. AI also used a table rather than a grid; I had gone with a table. And finally, AI used the variable "let" while I used only "var"
 
-This was a difficult assignment to complete, mostly because the images made the load time absurdly long so anytime I made changes and wanted to make sure things were still working I had to wait a long time while everything loaded.
+This was a difficult assignment to complete, mostly because the images made the load time absurdly long so anytime I made changes and wanted to make sure things were still working I had to wait a long time while everything loaded. I can't exactly tell if things are working properly and had a difficult time troubleshooting things due to the fact that it never wanted to load on the browser.
