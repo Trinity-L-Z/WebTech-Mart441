@@ -7,11 +7,6 @@ h1{
 	text-align: center;
 }
 
-.button{
-	position:absolute;
-	top:50%;
-}
-
 .divTable{
 	display: table;
 	width: 100%;
