@@ -1,5 +1,5 @@
-var imageTags = ["link1", "link2", "link3", "link", "link5", "link6"];
-var blankImagePath = "images/link1.png";
+var imageTags = ["linky", "linky2", "linky3", "linky4", "linky5", "linky6"];
+var blankImagePath = "images/linky1.png";
 var actualImages = new Array();
 
 var firstNumber = -1;
@@ -23,7 +23,7 @@ function printBlanks()
 //function to randomize images
 function createRandomImageArray()
 {
-    var actualImagePath = ["images/link1.png", "images/link2.png", "images/link3.png", "images/link4.png", "images/link5.png", "images/link6.png"];
+    var actualImagePath = ["images/linky1.png", "images/linky2.png", "images/linky3.png", "images/linky4.png", "images/linky5.png", "images/linky6.png"];
     var count = [0,0];
 
     while(actualImages.length < 6)
