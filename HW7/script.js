@@ -1,4 +1,5 @@
 var imageTags = ["linky", "linky2", "linky3", "linky4", "linky5", "linky6"];
+//variable for the cover image
 var blankImagePath = "images/coverlinky.png";
 var actualImages = new Array();
 
@@ -7,13 +8,13 @@ var secondNumber = -1;
 
 var player = {"firstname":"", "lastname":"", "age":0, "score":0};
     
-
+//function to make cover image appear initially
 function printBlanks()
 {
     createRandomImageArray();
     for(var i = 0; i < imageTags.length; i++)
     {
-        document.getElementById(imageTags[i]).src= blankImagePath;
+        document.getElementById(imageTags[i]).src = blankImagePath;
     }
        
     
