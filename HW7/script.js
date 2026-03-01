@@ -7,18 +7,7 @@ var secondNumber = -1;
 
 var player = {"firstname":"", "lastname":"", "age":0, "score":0};
     
-function printBlanks()
-{
-    createRandomImageArray();
-    for(var i = 0; i < imageTags.length; i++)
-    {
-        document.getElementById(imageTags[i]).src= blankImagePath;
-    }
-       
-    
-    
-}
-
+//function to randomize images
 function createRandomImageArray()
 {
     var actualImagePath = ["images/link1.png", "images/link2.png", "images/link3.png", "images/link4.png", "images/link5.png", "images/link6.png"];
@@ -34,6 +23,27 @@ function createRandomImageArray()
             count[randomNumber] = count[randomNumber] + 1;
         }
     }      
+}
+
+function printBlanks()
+{
+    createRandomImageArray();
+    for(var i = 0; i < imageTags.length; i++)
+    {
+        document.getElementById(imageTags[i]).src= blankImagePath;
+    }
+       
+    
+    
+}
+
+function imagesDisappear()
+{
+    console.log(firstNumber);
+    document.getElementById(imageNames[firstNumber]).src = blankImagePath;
+    document.getElementById(imagenames[secondNumber]).src = blankImagePath;
+    firstNumber = -1;
+    secondNumber = -1;
 }
 
 //funtion to check if images match!
@@ -61,14 +71,7 @@ function flipImage(number)
     }
 }
 
-function imagesDisappear()
-{
-    console.log(firstNumber);
-    document.getElementById(imageNames[firstNumber]).src = blankImagePath;
-    document.getElementById(imagenames[secondNumber]).src = blankImagePath;
-    firstNumber = -1;
-    secondNumber = -1;
-}
+
 
 function playerInfo()
 {
