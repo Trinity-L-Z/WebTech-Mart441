@@ -30,15 +30,27 @@ function createRandomImageArray()
             actualImages.push(actualImagePath[randomNumber]);
             count[randomNumber] = count[randomNumber] + 1;
         }
-    }
-    
-  
-    
-    
-        
+    }      
 }
 
 function flipImage(number)
 {
     document.getElementById(imageTags[number]).src= actualImages[number];
+}
+
+function playerInfo()
+{
+    var playerInformation = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInformation);
+    console.log(player.firstname);
+   
+}
+
+function addToPlayer()
+{
+    var firstName = document.getElementById("txtFirstName").value;
+    //console.log(firstName);
+    player.firstname = firstName;
+    localStorage.setItem("playerInfo", JSON.stringify(player));
+    window.location = "HWExample.html";
 }
