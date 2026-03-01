@@ -1,5 +1,5 @@
 var imageNames = ["image1", "image2", "image3", "image4"];
-var blankImagePath = "images/coverlinky.png";
+var blankImagePath = "images/gofish.jpg";
 var firstNumber = -1;
 var secondNumber = -1;
 // JSON declaration

@@ -1,5 +1,5 @@
 var imageTags = ["linky", "linky2", "linky3", "linky4", "linky5", "linky6"];
-var blankImagePath = "images/linky1.png";
+var blankImagePath = "images/coverlinky.png";
 var actualImages = new Array();
 
 var firstNumber = -1;
