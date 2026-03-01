@@ -61,6 +61,15 @@ function flipImage(number)
     }
 }
 
+function imagesDisappear()
+{
+    console.log(firstNumber);
+    document.getElementById(imageNames[firstNumber]).src = blankImagePath;
+    document.getElementById(imagenames[secondNumber]).src = blankImagePath;
+    firstNumber = -1;
+    secondNumber = -1;
+}
+
 function playerInfo()
 {
     var playerInformation = localStorage.getItem("playerInfo");
