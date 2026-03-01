@@ -49,7 +49,6 @@ function playerInfo()
 function addToPlayer()
 {
     var firstName = document.getElementById("txtFirstName").value;
-    //console.log(firstName);
     player.firstname = firstName;
     localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "game.html";
