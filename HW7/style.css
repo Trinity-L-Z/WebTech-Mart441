@@ -2,6 +2,11 @@ body{
     background-color:darkcyan;
 }
 
+h1{
+	color:#c2bcf4;
+	text-align: center;
+}
+
 .divTable{
 	display: table;
 	width: 100%;
