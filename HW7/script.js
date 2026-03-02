@@ -24,8 +24,8 @@ function printBlanks()
 //function to randomize images
 function createRandomImageArray()
 {
-    var actualImagePath = ["images/linky1.png", "images/linky2.png", "images/linky3.png", "images/linky4.png", "images/linky5.png", "images/linky6.png"];
-    var count = [0,0];
+    var actualImagePath = ["images/linky1.png", "images/linky2.png", "images/linky3.png"];
+    var count = [0,0,0];
 
     while(actualImages.length < 6)
     {
@@ -47,11 +47,12 @@ function flipImage(number)
         secondNumber = number;
         document.getElementById(imageTags[number]).src = actualImages[secondNumber];
     }
-    else if (firstNumber < 0);
+    else if (firstNumber < 0)
     {
         firstNumber = number;
         document.getElementById(imageTags[firstNumber]).src = actualImages[firstNumber];
     }
+        console.log(firstNumber + ";" + secondNumber)
 
     if (actualImages[secondNumber] != actualImages[firstNumber] && firstNumber >= 0 && secondNumber >=0)
     {
@@ -66,9 +67,9 @@ function flipImage(number)
 
 function imagesDisappear()
 {
-    console.log(firstNumber);
-    document.getElementById(imageNames[firstNumber]).src = blankImagePath;
-    document.getElementById(imagenames[secondNumber]).src = blankImagePath;
+    //console.log(firstNumber);
+    document.getElementById(imageTags[firstNumber]).src = blankImagePath;
+    document.getElementById(imageTags[secondNumber]).src = blankImagePath;
     firstNumber = -1;
     secondNumber = -1;
 }
