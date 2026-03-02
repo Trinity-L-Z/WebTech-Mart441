@@ -39,7 +39,7 @@ function createRandomImageArray()
     }      
 }
 
-//funtion to check if images match!
+//funtion to flip images and check if images match!
 function flipImage(number)
 {
     if (firstNumber >=0)
@@ -50,7 +50,7 @@ function flipImage(number)
     else if (firstNumber < 0);
     {
         firstNumber = number;
-        document.getElementById(imageTags[firstNumber]).src = actualImages[fisrtNumber];
+        document.getElementById(imageTags[firstNumber]).src = actualImages[firstNumber];
     }
 
     if (actualImages[secondNumber] != actualImages[firstNumber] && firstNumber >= 0 && secondNumber >=0)
