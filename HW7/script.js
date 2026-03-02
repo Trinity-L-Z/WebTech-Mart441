@@ -1,4 +1,4 @@
-var imageTags = ["linky", "linky2", "linky3", "linky4", "linky5", "linky6"];
+var imageTags = ["linky1", "linky2", "linky3", "linky4", "linky5", "linky6"];
 //variable for the cover image
 var blankImagePath = "images/coverlinky.png";
 var actualImages = new Array();
