@@ -6,6 +6,9 @@ var actualImages = new Array();
 var firstNumber = -1;
 var secondNumber = -1;
 
+var score = 0;
+var allFound = 0;
+
 var player = {"firstname":"", "lastname":"", "age":0, "score":0};
     
 //function to make cover image appear initially
@@ -66,7 +69,7 @@ function flipImage(number)
         
         firstNumber = -1;
         secondNumber = -1;
-
+//this is what get the game to move on to results when all images are found
         if(allFound == actualImages.length/2)
         {
             player.score = score;
