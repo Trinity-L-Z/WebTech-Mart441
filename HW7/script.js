@@ -100,7 +100,7 @@ function addToPlayer()
     player.firstname = firstName;
     player.lastname = lastName;
     player.age = age;
-    
-    localStorage.getItem("playerInfo", JSON.stringify(player));
+
+    localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "game.html";
 }
