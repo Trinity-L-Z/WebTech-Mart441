@@ -87,13 +87,20 @@ function playerInfo()
    {
     document.getElementById("endInformation").innerHTML = str;
    }
-   
+
 }
 
 function addToPlayer()
 {
+    
     var firstName = document.getElementById("txtFirstName").value;
+    var lastName = document.getElementById("txtLastName").value;
+    var age = document.getElementById("txtAge").value;
+
     player.firstname = firstName;
+    player.lastname = lastName;
+    player.age = age;
+    
     localStorage.getItem("playerInfo", JSON.stringify(player));
     window.location = "game.html";
 }
