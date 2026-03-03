@@ -56,12 +56,23 @@ function flipImage(number)
 
     if (actualImages[secondNumber] != actualImages[firstNumber] && firstNumber >= 0 && secondNumber >=0)
     {
+        score++;
         setTimeout(imagesDisappear, 1000);
     }
     else if (actualImages[secondNumber] == actualImages[firstNumber] && firstNumber >= 0 && secondNumber >= 0)
     {
+        score++;
+        allFound++;
+        
         firstNumber = -1;
         secondNumber = -1;
+
+        if(allFound == actualImages.length/2)
+        {
+            player.score = score;
+            localStorage.setItem("playerInfo", JSON.stringify(player));
+            window.location = "results.html";
+        }
     }
 }
 
