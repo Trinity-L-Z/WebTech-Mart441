@@ -80,7 +80,13 @@ function playerInfo()
 {
     var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
-    console.log(player.firstname);
+    //console.log(player.firstname);
+   var str = "Name: " + player.firstname + " " + player.lastname + "<br>" + "Age: " + player.age + "<br>" + "Score: " + player.score;
+
+   if(document.getElementById("endInformation") != null)
+   {
+    document.getElementById("endInformation").innerHTML = str;
+   }
    
 }
 
