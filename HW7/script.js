@@ -78,7 +78,7 @@ function imagesDisappear()
 
 function playerInfo()
 {
-    var playerInformation = localStorage.getItem("playerInformation");
+    var playerInformation = localStorage.getItem("playerInfo");
     player = JSON.parse(playerInformation);
     console.log(player.firstname);
    
