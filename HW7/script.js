@@ -6,7 +6,6 @@ var actualImages = new Array();
 var firstNumber = -1;
 var secondNumber = -1;
 
-let score = 0;
 var player = {"firstname":"", "lastname":"", "age":0, "score":0};
     
 //function to make cover image appear initially
