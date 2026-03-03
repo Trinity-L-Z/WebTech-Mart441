@@ -6,6 +6,7 @@ var actualImages = new Array();
 var firstNumber = -1;
 var secondNumber = -1;
 
+let score = 0;
 var player = {"firstname":"", "lastname":"", "age":0, "score":0};
     
 //function to make cover image appear initially
@@ -65,6 +66,8 @@ function flipImage(number)
     }
 }
 
+
+//function to make images restart if they don't match
 function imagesDisappear()
 {
     //console.log(firstNumber);
@@ -86,6 +89,6 @@ function addToPlayer()
 {
     var firstName = document.getElementById("txtFirstName").value;
     player.firstname = firstName;
-    localStorage.setItem("playerInfo", JSON.stringify(player));
+    localStorage.getItem("playerInfo", JSON.stringify(player));
     window.location = "game.html";
 }
