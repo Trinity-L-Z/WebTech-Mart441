@@ -1,4 +1,4 @@
-var myViewFinder = new Array();
+var myGayIconsArray = new Array();
 
 class GayIcons {
 
@@ -32,15 +32,15 @@ function initializeArray() {
 
     var myViewFinder = new GayIcons();
 
-    myViewFinderArray.push(myViewFinder);
+    myViewFinderArray.push(myGayIcons);
 
-    myViewFinderArray.push(myViewFinder);
+    myViewFinderArray.push(myGayIcons);
 
 }
 
 function accessInformation() {
 
-    var randomNumber = Math.floor(Math.random() * myViewFinderArray.length);
+    var randomNumber = Math.floor(Math.random() * myGayIconsArray.length);
 
-    document.getElementById("title").innerHTML = myViewFinderArray[randomNumber].toString();
+    document.getElementById("title").innerHTML = myGayIconsArray[randomNumber].toString();
 }
