@@ -1,0 +1,22 @@
+body {
+    background-color: royalblue;
+}
+
+h1 {
+	color:cornsilk;
+	text-align: center;
+}
+
+div {
+    color:coral;
+    text-align: center;
+    font-size: 30px;
+    text-decoration-line: overline;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
