@@ -28,9 +28,9 @@ new GayIcons();
 
 function initializeArray() {
     
-    var myViewFinder = new GayIcons();
+    var myGayIcons = new GayIcons();
 
-    var myViewFinder = new GayIcons();
+    var myGayIcons = new GayIcons();
 
     myViewFinderArray.push(myGayIcons);
 
