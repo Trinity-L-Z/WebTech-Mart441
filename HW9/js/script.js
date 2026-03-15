@@ -1,6 +1,6 @@
 var mama = ["mama1.png", "mama2.png", "mama3.png", "mama4.png", "mama5.png"];
 var mamaI = 0;
-var adj = ["Big", "Little", "Fluffy", "Kitty", "Scaredy", "Clever", "Lazy", "Wild"];
+var adj = ["Blurred", "Stretched", "Strange", "Smiling", "Different"];
 var adjI = 0;
 
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
     });
 
     mamaI = mamaI + 1;
-    if(mamaI > 5){
+    if(mamaI > 4){
       mamaI = 0;
     };
 

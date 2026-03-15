@@ -5,7 +5,7 @@ body{
 }
 
 h1{
-  font-family: 'Cedarville Cursive', cursive;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 img#catImage{
@@ -19,12 +19,11 @@ img#catImage{
   padding: 30px;
   padding-top: 180px;
   max-width: 800px;
-  min-height: 500px;
+  min-height: 1200px;
 
   text-align: center;
 
-  background-color: #ffffff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+  background-color:darkslategrey;
 }
 
 .button{
