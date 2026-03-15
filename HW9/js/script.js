@@ -36,7 +36,7 @@ $(document).ready(function(){
     };
 
     adjI = adjI + 1;
-    if(adjI > 7){
+    if(adjI > 5){
       adjI = 0;
     };
   };
