@@ -9,7 +9,8 @@ h1{
   position:fixed;
   text-align:justify;
   top: 0;
-  color:antiquewhite;
+  position: fixed;
+  color:rgb(235, 190, 131);
 }
 
 img#catImage{
@@ -28,6 +29,10 @@ img#catImage{
   text-align: center;
 
   background-color:darkslategrey;
+}
+
+.button{
+  text-align: center;
 }
 
 #imageDiv{
