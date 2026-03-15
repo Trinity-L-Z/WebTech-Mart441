@@ -1,14 +1,14 @@
-var cats = ["cat1.png", "cat2.png", "cat3.png", "cat4.png", "cat5.png", "cat6.png"];
-var catI = 0;
+var mama = ["mama1.png", "mama2.png", "mama3.png", "mama4.png", "mama5.png"];
+var mamaI = 0;
 var adj = ["Big", "Little", "Fluffy", "Kitty", "Scaredy", "Clever", "Lazy", "Wild"];
 var adjI = 0;
 
 
 $(document).ready(function(){
   function imageLoop(){
-    $("#catImage").fadeOut("slow", function(){
-      $("#catImage").attr("src", "./img/"+cats[catI]);
-      $("#catImage").fadeIn("slow");
+    $("#mamaImage").fadeOut("slow", function(){
+      $("#mamaImage").attr("src", "./img/"+mama[mamaI]);
+      $("#mamaImage").fadeIn("slow");
     });
 
     $("#adj").fadeOut(5000, function(){
@@ -30,9 +30,9 @@ $(document).ready(function(){
       });
     });
 
-    catI = catI + 1;
-    if(catI > 5){
-      catI = 0;
+    mamaI = mamaI + 1;
+    if(mamaI > 5){
+      mamaI = 0;
     };
 
     adjI = adjI + 1;
