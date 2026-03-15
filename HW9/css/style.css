@@ -6,6 +6,10 @@ body{
 
 h1{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position:fixed;
+  text-align:justify;
+  top: 0;
+  color:antiquewhite;
 }
 
 img#catImage{
@@ -24,10 +28,6 @@ img#catImage{
   text-align: center;
 
   background-color:darkslategrey;
-}
-
-.button{
-  text-align: center;
 }
 
 #imageDiv{
