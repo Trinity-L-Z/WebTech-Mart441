@@ -31,6 +31,10 @@ img#catImage{
   background-color:darkslategrey;
 }
 
+.button{
+  text-align: center;
+}
+
 #imageDiv{
   height: 200px;
 }
