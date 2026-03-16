@@ -42,5 +42,5 @@ $(document).ready(function(){
   };
 
   imageLoop();
-  setInterval(imageLoop, 3000);
+  setInterval(imageLoop, 4400);
 });
