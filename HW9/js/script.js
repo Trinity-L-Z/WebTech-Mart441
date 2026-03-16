@@ -18,11 +18,11 @@ $(document).ready(function(){
 
     $("#mover").animate({right: "0"}, 5000, function(){
       $("#mover").fadeOut(500, function(){
-        $("#mover").attr("src", "./img/star.jpg");
+        $("#mover").attr("src", "./img/star.png");
         $("#mover").fadeIn(500, function(){
           $("#mover").animate({right: null, left: 0}, 5000, function(){
             $("#mover").fadeOut(500, function(){
-              $("#mover").attr("src", "./img/star.jpg");
+              $("#mover").attr("src", "./img/star.png");
               $("#mover").fadeIn(500);
             });
           });
