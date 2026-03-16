@@ -13,11 +13,6 @@ h1{
   color:rgb(235, 190, 131);
 }
 
-img#catImage{
-  max-width: 200px;
-  max-height: 200px;
-}
-
 .main{
   margin: auto;
   margin-top: 20px;
@@ -29,10 +24,6 @@ img#catImage{
   text-align: center;
 
   background-color:darkslategrey;
-}
-
-.button{
-  text-align: center;
 }
 
 #imageDiv{
