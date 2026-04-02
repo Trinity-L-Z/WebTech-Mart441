@@ -1,10 +1,11 @@
- $(document).ready(function () {
+$(document).ready(function () {
             $("button").click(function () {
                 $("#musicInformation").load("data/musicInfo.json", function(responseText){
-                    var genres = JSON.parse(responseText);
-                    $("#musicInformation").html("Name: " + genres.name 
-                + "<br>Origin Decade:" + genres.origin_decade + "<br>Parent:" + genres.parent + "<br>Subgenres:" +
-                genres.subgenres[0] + "<br>" + genres.subgenres[1] + "<br>" + genres.subgenres[2] + "<br>" + genres.subgenres[3] + genres.subgenres[4]);
+                    var genre = JSON.parse(responseText);
+                    $("#musicInformation").html("Name: " + genre.name 
+                + "<br>Origin Decade: " + genre.origin_decade + "<br>Parent:" + genre.parent + "<br>Subgenres:<br>" )
+                
+                /* + genre.subgenres[0] + "<br>" + genre.subgenres[1] + "<br>" + genre.subgenres[2] + "<br>" + genre.subgenres[3] + "<br>" + genre.subgenres[4]); */
                 });
             });
         });

@@ -2,10 +2,7 @@ body{
   background-color: #4f92a6;
   font-family: 'VT323', monospace;
   font-size: 18px;
-}
-
-h1{
-  font-family: 'VT323', monospace;
+  color:#e2e1b9;
 }
 
 button{
@@ -36,7 +33,7 @@ button:hover{
 }
 
 .screen{
-  height: 200px;
+  height: 400px;
   background-color: #06162f;
   border-radius: 5px;
   box-shadow: inset 0 4px 10px rgba(0, 0, 0, .5);
