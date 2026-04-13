@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bad Bunny's Big Day</title>
+        <link rel="stylesheet" href="style.css">
+    <script>
+        function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Home")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice2").style.display="block";
+                document.getElementById("btnSubmit2").style.display="block";
+                
+
+                myQuestion.innerHTML = "Me too! This way I can watch listen to Bad Bunny's discography during plays and then scrutinize the advertisements. Speaking of which--are we absolutely sick of ads of not?!";
+            }
+            else if(myChoice === "Stadium")
+            {
+                document.getElementById("choice").style.display="none";
+                document.getElementById("btnSubmit").style.display="none";
+                
+                document.getElementById("choice3").style.display="block";
+                document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "Interesting way to spend your money, but hey we all do what we want. Did you like seeing the halftime show in-person?";
+
+            }
+            else
+            {
+                myQuestion.innerHTML = "womp womp try again";
+            }
+        
+        }
+        function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "YES")
+            {
+                document.getElementById("mainImage").src = "badbunny2.jpeg"
+                myQuestion.innerHTML = "Ads have gotten out of control! From subscription plans to 2min videos on YouTube...this amount of unsolicited adversiments has to be illegal!";
+            }
+            else if(answer === "No (?)")
+            {
+                myQuestion.innerHTML = "You're crazy for that but aight.";
+            }
+        }
+
+        function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Sí")
+            {
+                document.getElementById("mainImage").src = "badbunnygaga.jpg.webp"
+                myQuestion.innerHTML = "Cool.";
+            }
+            else if(answer === "No")
+            {
+                myQuestion.innerHTML = "Yeah I can't imagine it being worth it, but I guess it is to some people! Would you ever do it again?";
+            }
+        }
+
+        function getChoice4()
+        {
+            var answer = document.getElementById("choice4").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "ABSOLUTELY")
+            {
+                document.getElementById("mainImage").src = "childbadbunny.jpg"
+                myQuestion.innerHTML = "Cool.";
+            }
+            else if(answer === "Nah")
+            {
+                myQuestion.innerHTML = "Yeah I can't imagine it being worth it, but I guess it is to some people!";
+            }
+        }
+    </script>
+    </head>
+    <body id="return">
+
+        <h1>El Gran Día de Bad Bunny</h1>
+        <br>
+        <img src="badbunny1.jpg.webp" id="bad bunny!">
+    <div id="question">
+    <br>
+       Today is the day of the Superbowl! Where are you at?
+    </div>
+   
+   
+
+        <br>
+        <input type="text" size="30" id="choice" value="Please enter Home or Stadium">
+        <button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+        <a href="#return">Return to beginning</a>
+
+        <input type="text" size="30" id="choice2" value="Enter YES or No (?)." style="display:none">
+        <button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice3" value="Enter Sí or No."  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice4" value="Enter ABSOLUTELY or Nah."  style="display:none">
+        <button id="btnSubmit4" onclick="getChoice4();" style="display:none">Click to continue</button>
+
+     </div>
+    </body>
+
+</html>

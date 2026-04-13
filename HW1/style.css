@@ -1,0 +1,119 @@
+header {
+  padding: 35px;
+  text-align: center;
+  background-color:#fffacd;
+  color:#cd5c5c;
+}
+
+.chapter {
+  text-align: center;
+  color: #fffacd;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+  background-color: #cd5c5c;
+  font-family: "Arvo", serif;
+}
+
+nav {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #7fff00;
+}
+
+ul {
+  padding: 5px;
+  text-align: center;
+}
+
+
+a {
+  color:#cd5c5c;
+}
+
+footer {
+  text-align: center;
+  color: #7fff00;
+}
+
+
+form{
+  background-color: #f9f7f1;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 75%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+
+
+h2 {
+  text-align: center;
+}
+
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #5a3e36;
+}
+
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  row-gap: 10px;
+  column-gap: 10px;
+}
