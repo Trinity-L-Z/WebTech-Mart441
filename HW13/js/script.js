@@ -157,11 +157,11 @@ function update(){
 function draw(){
   document.getElementById("score").innerHTML = score;
   ctx.clearRect(0, 0, 840, 630);
-  ctx.fillStyle = "#136aff";
+  ctx.fillStyle = "#ccdbf6";
   ctx.fillRect(x, y, w, h);
 
   for(var i = 0; i < collectableArray.length; i++) {
-    ctx.fillStyle = "#8fff54";
+    ctx.fillStyle = "#136aff";
     ctx.fillRect(collectableArray[i].x + 10, collectableArray[i].y + 10, collectableArray[i].width, collectableArray[i].height);
 
     if(((x + w) >= (collectableArray[i].x)) && (x <= (collectableArray[i].x + collectableArray[i].width)) && ((y + h) >= collectableArray[i].y) && (y <= (collectableArray[i].y + collectableArray[i].height))){
