@@ -157,7 +157,7 @@ function update(){
 function draw(){
   document.getElementById("score").innerHTML = score;
   ctx.clearRect(0, 0, 840, 630);
-  ctx.fillStyle = "#ccdbf6";
+  ctx.fillStyle = "#8c9fc3";
   ctx.fillRect(x, y, w, h);
 
   for(var i = 0; i < collectableArray.length; i++) {
