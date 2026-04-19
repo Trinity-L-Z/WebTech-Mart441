@@ -21,11 +21,14 @@ var config = {
 var player;
 var stars;
 var bombs;
+var orbs;
 var platforms;
 var cursors;
 var score = 0;
 var gameOver = false;
 var scoreText;
+var velocity = 160;
+var orbPower = false;
 
 var game = new Phaser.Game(config);
 
