@@ -98,7 +98,7 @@ function create() {
 
         //star bounce
         child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
-        child.setGravityY(Phaser.Math.FloatBetween(-300, -100));
+        
 
     });
 
