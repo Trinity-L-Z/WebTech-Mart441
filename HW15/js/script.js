@@ -39,11 +39,11 @@ function createBox2() {
     color: 0x1234ee
   });
   cube2 = new THREE.Mesh(geometry, material);
-  cube2.position.set(2, 0);
+  cube2.position.set(20, 0);
   cube.add(cube2);
-  cube2.scale.x = .5; // SCALE
-  cube2.scale.y = .5; // SCALE
-  cube2.scale.z = .5; // SCALE
+  cube2.scale.x = 15; // SCALE
+  cube2.scale.y = 15; // SCALE
+  cube2.scale.z = 15; // SCALE
 
   animate2();
 }
@@ -53,7 +53,6 @@ function animate2() {
   requestAnimationFrame(animate2);
   cube2.rotation.x += 0.05;
   cube2.rotation.y += 0.05;
-
 
 }
 
