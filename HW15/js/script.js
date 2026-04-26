@@ -2,25 +2,22 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var cube, cube2;
 var modelObject;
-// create the first box
 function createBox() {
-  // create a box
   var geometry = new THREE.BoxGeometry();
+  //cube 1
   var material = new THREE.MeshBasicMaterial({
-    color: 0x324ca8
+    color: 0xa3f47f //# = 0x , https://www.color-hex.com/color/1234ee
   });
-  cube = new THREE.Mesh(geometry, material);
-  cube.position.set(50, 0, 0);
+  cube = new THREE.Mesh(geometry, material);  
+  cube.position.set(50, 0, 0);  
   scene.add(cube);
-  cube.scale.x = 15; // SCALE
-  cube.scale.y = 15; // SCALE
-  cube.scale.z = 15; // SCALE
-
-
+  cube.scale.x = 15;
+  cube.scale.y = 15; 
+  cube.scale.z = 15; 
   animate();
 }
 
-// animate the first box
+//first box animation
 function animate() {
   requestAnimationFrame(animate);
   cube.rotation.x += 0.01;
@@ -31,19 +28,17 @@ function animate() {
 }
 
 
-// create the second box and add it as a child of the first box
 function createBox2() {
-  // create a box
   var geometry = new THREE.BoxGeometry();
-  var material = new THREE.MeshBasicMaterial({
-    color: 0x1234ee
+  var material2 = new THREE.MeshBasicMaterial({
+    color: 0xffe599
   });
-  cube2 = new THREE.Mesh(geometry, material);
-  cube2.position.set(20, 0);
+  cube2 = new THREE.Mesh(geometry, material2);
+  cube2.position.set(-30, 0, 0);
   cube.add(cube2);
-  cube2.scale.x = 15; // SCALE
-  cube2.scale.y = 15; // SCALE
-  cube2.scale.z = 15; // SCALE
+  cube2.scale.x = 5;
+  cube2.scale.y = 5;
+  cube2.scale.z = 5; 
 
   animate2();
 }
@@ -51,18 +46,14 @@ function createBox2() {
 
 function animate2() {
   requestAnimationFrame(animate2);
-  cube2.rotation.x += 0.05;
-  cube2.rotation.y += 0.05;
-
+  cube2.rotation.x += 0.01;
+  cube2.rotation.y += 0.01;
 }
 
-/**
- * Generate a scene object with a background color
- **/
-
+// scene object and background color
 function getScene() {
   var scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xaaaaaa);
+  scene.background = new THREE.Color("rgb(77, 47, 93)");
   return scene;
 }
 
