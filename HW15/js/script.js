@@ -2,22 +2,55 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var cube, cube2;
 var modelObject;
-var loader = new THREE.FontLoader();
 
-/*loader.load('fonts/helvetiker_regular.typeface.json', function (font) {
-var geometry = new THREE.TextGeometry('Trin Rulezz!', {
-    font: font,
-    size: 80,
-    height: 5,
-    curveSegments: 12,
-    bevelEnabled: true,
-    bevelThickness: 10,
-    bevelSize: 8,
-    bevelOffset: 0,
-    bevelSegments: 5
+loadFont();
+
+var text = "aems",
+  height = 2,
+  size = 10,
+  curveSegments = 10,
+  bevelThickness = 1,
+  bevelSize = 0.3,
+  bevelSegments = 3,
+  bevelEnabled = true,
+  font = undefined;
+
+function loadFont() {
+  var loader = new THREE.FontLoader();
+
+  loader.load('fonts/gentilis_bold.typeface.json', function (res) {
+    font = res;
+    createText();
   });
-});
-*/
+}
+
+function createText() {
+  // change the text here
+  textGeo = new THREE.TextGeometry('Trin Rulezz!', {
+    font: font,
+    size: size,
+    height: height,
+    curveSegments: curveSegments,
+    weight: "normal",
+    bevelThickness: bevelThickness,
+    bevelSize: bevelSize,
+    bevelSegments: bevelSegments,
+    bevelEnabled: bevelEnabled
+  });
+
+  textGeo.computeBoundingBox();
+  textGeo.computeVertexNormals();
+
+  var color = new THREE.Color(0xf4accf);
+  var textMaterial = new THREE.MeshBasicMaterial({ color: color });
+
+  var textMesh = new THREE.Mesh(textGeo, textMaterial);
+  textMesh.position.set(70, 0, -30);
+  textMesh.lookAt(camera.position);
+  textMesh.castShadow = true;
+
+  scene.add(textMesh);
+}
 
 function createBox() {
   var geometry = new THREE.BoxGeometry();
@@ -39,9 +72,8 @@ function animate() {
   requestAnimationFrame(animate);
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
-  createBox2();
+  createBox2(); 
   renderer.render(scene, camera);
-
 }
 
 function createBox2() {
@@ -59,7 +91,6 @@ function createBox2() {
   animate2();
 }
 
-
 function animate2() {
   requestAnimationFrame(animate2);
   cube2.rotation.x += 0.01;
@@ -72,7 +103,6 @@ function getScene() {
   scene.background = new THREE.Color("rgb(77, 47, 93)");
   return scene;
 }
-
 
 function getCamera() {
   var aspectRatio = window.innerWidth / window.innerHeight;
