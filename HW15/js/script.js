@@ -57,30 +57,14 @@ function getScene() {
   return scene;
 }
 
-/**
- * Generate the camera to be used in the scene. Camera args:
- *   [0] field of view: identifies the portion of the scene
- *     visible at any time (in degrees)
- *   [1] aspect ratio: identifies the aspect ratio of the
- *     scene in width/height
- *   [2] near clipping plane: objects closer than the near
- *     clipping plane are culled from the scene
- *   [3] far clipping plane: objects farther than the far
- *     clipping plane are culled from the scene
- **/
-
 function getCamera() {
   var aspectRatio = window.innerWidth / window.innerHeight;
-  var camera = new THREE.PerspectiveCamera(75, aspectRatio, 0.1, 1000);
-  camera.position.set(0, 90, -10);
+  var camera = new THREE.PerspectiveCamera(100, aspectRatio, 0.1, 1000);
+  camera.position.set(0, 100, -10);
   return camera;
 }
 
-/**
- * Generate the light to be used in the scene. Light args:
- *   [0]: Hexadecimal color of the light
- *   [1]: Numeric value of the light's strength/intensity
- *   [2]: The distance from the light where the intensity is 0
+/** scene light
  * @param {obj} scene: the current scene object
  **/
 
