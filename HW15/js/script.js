@@ -2,6 +2,7 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var cube, cube2;
 var modelObject;
+
 function createBox() {
   var geometry = new THREE.BoxGeometry();
   //cube 1
@@ -26,7 +27,6 @@ function animate() {
   renderer.render(scene, camera);
 
 }
-
 
 function createBox2() {
   var geometry = new THREE.BoxGeometry();
@@ -57,6 +57,7 @@ function getScene() {
   return scene;
 }
 
+
 function getCamera() {
   var aspectRatio = window.innerWidth / window.innerHeight;
   var camera = new THREE.PerspectiveCamera(100, aspectRatio, 0.1, 1000);
@@ -78,26 +79,19 @@ function getLight(scene) {
   return light;
 }
 
-/**
- * Generate the renderer to be used in the scene
- **/
-
+//renderer
 function getRenderer() {
-  // Create the canvas with a renderer
   var renderer = new THREE.WebGLRenderer({
     antialias: true
   });
-  // Add support for retina displays
   renderer.setPixelRatio(window.devicePixelRatio);
-  // Specify the size of the canvas
   renderer.setSize(window.innerWidth, window.innerHeight);
-  // Add the canvas to the DOM
   document.body.appendChild(renderer.domElement);
   return renderer;
 }
 
 /**
- * Generate the controls to be used in the scene
+ * controls to be used in the scene
  * @param {obj} camera: the three.js camera for the scene
  * @param {obj} renderer: the three.js renderer for the scene
  **/
@@ -128,11 +122,6 @@ function animateModel() {
   modelObject.rotation.x += 0.05;
   modelObject.rotation.y += 0.05;
 }
-
-
-/**
- * Render!
- **/
 
 function render() {
   requestAnimationFrame(render);
